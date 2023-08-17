@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    display:block;
+    height: 65px;
+    content:'';
+}
+
+body {
+    background-color: #181818;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    border-bottom: 2px solid #424242;
+}
+
+.navbar-brand img {
+    width:40px;
+} 
+
+.logo {
+    font-size:20px;
+}
+
+form {
+    width:600px;
+}
+
+.search-icon {
+    display: none;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.main-part {
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    width:5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #212121;
+    border-radius: 25px;
+}
+
+.side-bar {
+    position: fixed;
+    overflow: auto;
+    width:250px;
+    height: 100%;
+}
+
+.side-bar-part-1 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #424242;
+}
+
+.side-bar-part-2 {
+    padding: 10px 0;
+    border-bottom: 2px solid #424242;
+}
+
+.side-bar-part-3 {
+    padding: 10px 0;
+    border-bottom: 2px solid #424242;
+}
+
+.top-bar-menu {
+    overflow-x:hidden;
+}
+
+.part-1 {
+    width:250px;
+}
+
+.part-2 {
+    width: calc(100vw-250px);
+}
+
+@media (max-width:1200px) {
+
+    .chip {
+        display: none;
+    }
+
+    .top-bar-menu {
+        overflow-x:scroll;
+    }
+
+    .side-bar {
+        width:50px;
+    }
+
+    .part-2 {
+        width: calc(100vw-50px);
+    }
+
+    form {
+        width:500px;
+    }
+}
+
+@media (max-width:992px) {
+
+    .main-part {
+        display: block;
+    }
+
+    .part-1 {
+        display: none;
+        width:0;
+    }
+
+    .part-2 {
+        width:100%;
+    }
+
+    form {
+        width:400px;
+    }
+}
+
+@media (max-width:768px) {
+
+    form {
+        width:250px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .chip-icon {
+        display: none;
+    }
+
+    form {
+        width:200px;
+    }
+}
+
+@media (max-width:425px) {
+
+    form {
+        width:150px;
+    }
+
+    .form-control {
+        display: none;
+    }
+
+    .input-group-text {
+       display: none;       
+    }
+
+    .search-icon {
+        font-size: 20px;
+        display: inline-block;
+    }
+}

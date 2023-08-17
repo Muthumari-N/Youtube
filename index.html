@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootsrtap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/03e5aab317.js" crossorigin="anonymous"></script>
+  <title>YouTube</title>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <section>
+    <nav class="navbar navbar-expand fixed-top" style="background-color:#212121FC;">
+      <div class="container-fluid">
+        <div class="d-flex">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars fs-4" style="color:#909090"></i></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-house fs-4"></i>
+                    <span>Home</span></a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-fire fs-3"></i>
+                    <span class="ps-1">Trends</span></a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-play fs-4"></i>
+                    <span class="ps-1">Subscriptions</span></a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bookmark fs-4 ps-1"></i>
+                    <span class="ps-1">Library</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="navbar-brand ps-3" href="#"><img src="Assets/video-youtube-icon-png-images-21.png"
+                  alt="youtube">
+                <span class="logo" style="color:white;">Premium</span></a>
+            </li>
+          </ul>
+        </div>
+        <form>
+          <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search">
+            <span class="input-group-text" type="submit"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+        </form>
+        <ul class="navbar-nav align-items-center justify-content-end">
+          <li class="nav-item  search-icon">
+            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass" style="color:#FFFFFF;"></i></a>
+          </li>
+          <li class="nav-item  chip-icon">
+            <a class="nav-link" href="#"><i class="fa-solid fa-video" style="color:#FFFFFF;"></i></a>
+          </li>
+          <li class="nav-item  chip-icon">
+            <a class="nav-link" href="#"><i class="fa-solid fa-grip ps-2" style="color:#FFFFFF;"></i></a>
+          </li>
+          <li class="nav-item  chip-icon">
+            <a class="nav-link" href="#"><i class="fa-solid fa-bell ps-2" style="color:#FFFFFF;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="Assets/images (1).jfif" alt="" width="30" height="30"
+                class="rounded-circle"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Side Bar -->
+
+  <div class="main-part">
+
+    <div class="part-1">
+
+      <section>
+        <div class="d-flex flex-column flex-shrink-0 p-xl-3 p-sm-0 text-white side-bar"
+          style="background-color: #212121;">
+          <ul class="nav nav-pills flex-column mb-auto side-bar-part-1">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-house ps-md-0 ms-md-0"></i>
+                <span class="p-2 chip">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-fire"></i>
+                <span class="p-2 chip">Trends</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-circle-play"></i>
+                <span class="p-2 chip">Subscriptions</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-brands fa-youtube"></i>
+                <span class="p-2 chip">Original</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column mb-auto side-bar-part-2">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-bookmark"></i>
+                <span class="p-2 chip">Library</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span class="p-2 chip">History</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-circle-play"></i>
+                <span class="p-2 chip">Your videos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-film"></i>
+                <span class="p-2 chip">Your movies</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-clock"></i>
+                <span class="p-2 chip">Watch later</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-angle-down"></i>
+                <span class="p-2 chip">Show more</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column mb-auto side-bar-part-3">
+            <span class="p-3 text-white chip">SUBSCRIPTIONS</span>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <img src="Assets/team-1.jpg" alt="" width="20" height="20" class="rounded-circle">
+                <span class="p-2 chip">Irfan Views</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <img src="Assets/video-youtube-icon-png-images-21.png" alt="" width="20" height="20"
+                  class="rounded-circle">
+                <span class="p-2 chip">Ice Age</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <img src="Assets/team-2.jpg" alt="" width="20" height="20" class="rounded-circle">
+                <span class="p-2 chip">Harry Potter</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <img src="Assets/team-3.jpg" alt="" width="20" height="20" class="rounded-circle">
+                <span class="p-2 chip">Movies Channel</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <img src="Assets/images (1).jfif" alt="" width="20" height="20" class="rounded-circle">
+                <span class="p-2 chip">Cartoon</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <img src="Assets/team-4.jpg" alt="" width="20" height="20" class="rounded-circle">
+                <span class="p-2 chip">Fun Only</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-angle-down"></i>
+                <span class="p-2 chip">Show 47 more</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <span class="p-3 text-white chip">MORE FROM YOUTUBE</span>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-gamepad"></i>
+                <span class="p-2 chip">Gaming</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-fire"></i>
+                <span class="p-2 chip">Trending</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-music"></i>
+                <span class="p-2 chip">Music</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <i class="fa-solid fa-trophy"></i>
+                <span class="p-2 chip">Sports</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="part-2">
+
+      <!-- Top Bar -->
+
+      <section class="top-bar-menu">
+        <div class="container" style="background-color: #212121;">
+          <ul class="top-bar d-flex text-white p-0">
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: black">All</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">Yatches</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">Boats</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">RVs</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">Engineering</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">Photocopier</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">Cookery</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">Apple</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">CSS</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">Figma</li>
+            <li class="px-3 py-2 m-2 rounded-pill" style="background-color: #424242">Astronomy</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Body -->
+
+      <section>
+
+        <div style="background-color:#181818;">
+
+          <div class="container">
+            <div class="row pb-3">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-4">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/vYPYgHwf2KA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/team-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Nature Video <br><span style="font-size:10px; color: #909090;"> Green
+                          Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-4">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/LTur8Ji_Bus"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/images (1).jfif" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Feel Nature <br><span style="font-size:10px; color: #909090;"> Green
+                          Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-2">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/oTQI74dOb8I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/download (2).jpg" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Relaxing Video <br><span style="font-size:10px; color: #909090;">
+                          Green
+                          Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-2">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="100%" height="200" src="https://www.youtube.com/embed/NVrpQ_EqP0U"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/team-3.jpg" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">1 Min video <br><span style="font-size:10px; color: #909090;"> Green
+                          Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row pb-3">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-4">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="auto" height="200" src="https://www.youtube.com/embed/nQ7mhC5_Rys"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/video-youtube-icon-png-images-21.png" alt="" width="35" height="35"
+                      class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Relaxation Flim <br><span style="font-size:10px; color: #909090;">
+                          Green
+                          Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-4">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="auto" height="200" src="https://www.youtube.com/embed/oTQI74dOb8I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/download (2).jpg" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Relaxing Video <br><span style="font-size:10px; color: #909090;">
+                          Green
+                          Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-2">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="auto" height="200" src="https://www.youtube.com/embed/oR-fEeNpMAA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/team-2.jpg" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Nature Medidation <br><span style="font-size:10px; color: #909090;">
+                          Green Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-2">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="auto" height="200" src="https://www.youtube.com/embed/0tIUbGVEKIk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/team-3.jpg" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Video Fun <br><span style="font-size:10px; color: #909090;"> Green
+                          Relax
+                          Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row pb-3">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-4">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="auto" height="200" src="https://www.youtube.com/embed/hOx_XnVLJU0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/team-4.jpg" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">One World Youtube <br><span style="font-size:10px; color: #909090;">
+                          Green Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-4">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="auto" height="200" src="https://www.youtube.com/embed/vYPYgHwf2KA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/team-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Nature Video <br><span style="font-size:10px; color: #909090;"> Green
+                          Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-2">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="auto" height="200" src="https://www.youtube.com/embed/NVrpQ_EqP0U"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/images (1).jfif" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Feel Nature <br><span style="font-size:10px; color: #909090;"> Green
+                          Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-md-2">
+                <div class="card border-dark" style="height:max-content;">
+                  <iframe width="auto" height="200" src="https://www.youtube.com/embed/LTur8Ji_Bus"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                  <div class="card-body d-flex text-white" style="background-color: #181818;">
+                    <img src="Assets/images (1).jfif" alt="" width="35" height="35" class="rounded-circle">
+                    <div class="ps-2">
+                      <p style="font-size: 12px;">Little Things Matter <br><span
+                          style="font-size:10px; color: #909090;">
+                          Green Relax Zone<br>1K Views. 1 Day Ago</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+  </div>
+
+</body>
+
+</html>
